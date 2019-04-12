@@ -21,7 +21,7 @@ namespace NuGet.Services.ServiceBus
         private readonly IBrokeredMessageSerializer<TMessage> _serializer;
         private readonly IBaseMessageHandler<TMessage, TResult> _handler;
         private readonly ISubscriptionProcessorTelemetryService _telemetryService;
-        private readonly ILogger<BaseSubscriptionProcessor<TMessage, TResult>> _logger;
+        private readonly ILogger _logger;
 
         private bool _running;
         private int _numberOfMessagesInProgress;
@@ -41,7 +41,7 @@ namespace NuGet.Services.ServiceBus
             IBrokeredMessageSerializer<TMessage> serializer,
             IBaseMessageHandler<TMessage, TResult> handler,
             ISubscriptionProcessorTelemetryService telemetryService,
-            ILogger<BaseSubscriptionProcessor<TMessage, TResult>> logger)
+            ILogger logger)
         {
             _client = client ?? throw new ArgumentNullException(nameof(client));
             _serializer = serializer ?? throw new ArgumentNullException(nameof(serializer));

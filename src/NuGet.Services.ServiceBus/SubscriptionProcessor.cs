@@ -15,9 +15,9 @@ namespace NuGet.Services.ServiceBus
         public SubscriptionProcessor(
             ISubscriptionClient client,
             IBrokeredMessageSerializer<TMessage> serializer,
-            IBaseMessageHandler<TMessage, bool> handler,
+            IMessageHandler<TMessage> handler,
             ISubscriptionProcessorTelemetryService telemetryService,
-            ILogger<BaseSubscriptionProcessor<TMessage, bool>> logger)
+            ILogger<SubscriptionProcessor<TMessage>> logger)
             : base(
                   client,
                   serializer,
