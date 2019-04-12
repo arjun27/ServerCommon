@@ -6,7 +6,7 @@ using System;
 namespace NuGet.Services.ServiceBus
 {
     /// <summary>
-    /// Interface for the telemetry emitted by <see cref="SubscriptionProcessor{TMessage}"/>.
+    /// Interface for the telemetry emitted by <see cref="BaseSubscriptionProcessor{TMessage}"/>.
     /// </summary>
     public interface ISubscriptionProcessorTelemetryService
     {

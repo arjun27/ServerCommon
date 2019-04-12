@@ -29,7 +29,7 @@ namespace NuGet.Services.ServiceBus.Tests
                 .Returns(serviceProviderMock.Object);
 
             serviceProviderMock
-                .Setup(p => p.GetService(typeof(IMessageHandler<object>)))
+                .Setup(p => p.GetService(typeof(IBaseMessageHandler<object, bool>)))
                 .Returns(handlerMock.Object);
 
             var target = new ScopedMessageHandler<object>(scopeFactoryMock.Object);
@@ -40,7 +40,7 @@ namespace NuGet.Services.ServiceBus.Tests
 
             // Assert
             scopeFactoryMock.Verify(f => f.CreateScope(), Times.Exactly(2));
-            serviceProviderMock.Verify(p => p.GetService(typeof(IMessageHandler<object>)), Times.Exactly(2));
+            serviceProviderMock.Verify(p => p.GetService(typeof(IBaseMessageHandler<object, bool>)), Times.Exactly(2));
             handlerMock.Verify(h => h.HandleAsync(It.IsAny<object>()), Times.Exactly(2));
         }
     }
