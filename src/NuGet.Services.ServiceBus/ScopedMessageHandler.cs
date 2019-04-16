@@ -5,7 +5,8 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace NuGet.Services.ServiceBus
 {
-    public class ScopedMessageHandler<TMessage> : BaseScopedMessageHandler<TMessage, bool>
+    public class ScopedMessageHandler<TMessage> : BaseScopedMessageHandler<TMessage, bool>,
+        IMessageHandler<TMessage>
     {
         public ScopedMessageHandler(IServiceScopeFactory scopeFactory)
             : base(scopeFactory)
