@@ -16,7 +16,14 @@ namespace NuGet.Services.ServiceBus
         /// Handle the message.
         /// </summary>
         /// <param name="message">The received message.</param>
-        /// <returns>Whether the message has been handled. If false, the message will be requeued to be handled again later.</returns>
+        /// <returns>
+        /// Whether the message has been handled. 
+        /// It is assumed that the implementation is coordinated with the specific
+        /// <see cref="ISubscriptionProcessor{TMessage}"/> implementation regarding the
+        /// interpretation of the result values.
+        /// Typically, if <typeparamref name="TResult"/> is bool, then false means the message will 
+        /// be requeued to be handled again later.
+        /// </returns>
         Task<TResult> HandleAsync(TMessage message);
     }
 }
