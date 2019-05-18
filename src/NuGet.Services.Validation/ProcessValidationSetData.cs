@@ -8,7 +8,7 @@ namespace NuGet.Services.Validation
 {
     public class ProcessValidationSetData
     {
-        internal ProcessValidationSetData(
+        public ProcessValidationSetData(
             string packageId,
             string packageVersion,
             Guid validationTrackingId,

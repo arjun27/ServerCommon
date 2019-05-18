@@ -7,7 +7,7 @@ namespace NuGet.Services.Validation
 {
     public class CheckValidatorData
     {
-        internal CheckValidatorData(Guid validationId)
+        public CheckValidatorData(Guid validationId)
         {
             if (validationId == Guid.Empty)
             {
