@@ -162,6 +162,10 @@
     <Compile Include="Migrations\201810102335589_RemoveConstraintOnSymbolsServerRequests.Designer.cs">
       <DependentUpon>201810102335589_RemoveConstraintOnSymbolsServerRequests.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905211307181_AddValidationSetCompleted.cs" />
+    <Compile Include="Migrations\201905211307181_AddValidationSetCompleted.Designer.cs">
+      <DependentUpon>201905211307181_AddValidationSetCompleted.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\ValidationMigrationsConfiguration.cs" />
     <Compile Include="PackageValidationEnqueuer.cs" />
     <Compile Include="PackageValidationMessageData.cs" />
@@ -273,6 +277,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201810102335589_RemoveConstraintOnSymbolsServerRequests.resx">
       <DependentUpon>201810102335589_RemoveConstraintOnSymbolsServerRequests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905211307181_AddValidationSetCompleted.resx">
+      <DependentUpon>201905211307181_AddValidationSetCompleted.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

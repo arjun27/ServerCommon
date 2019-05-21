@@ -77,5 +77,11 @@ namespace NuGet.Services.Validation
         /// </summary>
         public ValidatingType ValidatingType { get; set; }
 
+        /// <summary>
+        /// Whether or not the validation set has completed and is in a terminal state. Any situation where all of the
+        /// work on in a validation set is done is considered "completed", whether it be due to all validations being
+        /// successful or some validations failing.
+        /// </summary>
+        public bool Completed { get; set; }
     }
 }
