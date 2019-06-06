@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>net462</TargetFramework>
+    <Description>Azure Management tools for NuGet services</Description>
+    <Title>NuGet.Services.AzureManagement</Title>
+    <Product>NuGet.Services.AzureManagement</Product>
   </PropertyGroup>
 
   <ItemGroup>

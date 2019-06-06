@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>net462</TargetFramework>
+    <Title>NuGet.Services.KeyVault</Title>
+    <Description>Key vault access for NuGet services</Description>
+    <Product>NuGet.Services.KeyVault</Product>
   </PropertyGroup>
 
   <ItemGroup>

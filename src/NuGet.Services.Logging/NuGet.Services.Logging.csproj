@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>net462</TargetFramework>
+    <Title>NuGet.Services.Logging</Title>
+    <Description>Shared server-side logging component for NuGet services.</Description>
+    <Product>NuGet.Services.Logging</Product>
   </PropertyGroup>
 
   <ItemGroup>

@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>net462</TargetFramework>
+    <Title>NuGet.Services.Storage</Title>
+    <Description>Shared server-side storage component for NuGet services</Description>
+    <Product>NuGet.Services.Storage</Product>
   </PropertyGroup>
 
   <ItemGroup>

@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>net462</TargetFramework>
+    <Title>NuGet.Services.FeatureFlags</Title>
+    <Product>NuGet.Services.FeatureFlags</Product>
+    <Description>Dynamic feature toggles</Description>
   </PropertyGroup>
 
   <ItemGroup>

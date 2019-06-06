@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>net462</TargetFramework>
+    <Title>NuGet.Services.Build</Title>
+    <Description>Shared component to assist NuGet build scripts.</Description>
+    <Product>NuGet.Services.Build</Product>
   </PropertyGroup>
 
   <ItemGroup>
