@@ -90,6 +90,9 @@
     <EmbeddedResource Include="Migrations\201810102335589_RemoveConstraintOnSymbolsServerRequests.resx">
       <DependentUpon>201810102335589_RemoveConstraintOnSymbolsServerRequests.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905272210233_AddValidationSetStatus.resx">
+      <DependentUpon>201905272210233_AddValidationSetStatus.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
