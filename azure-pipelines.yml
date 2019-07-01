@@ -14,5 +14,5 @@ steps:
 - task: RichCodeNavIndexer@0
   inputs:
     serviceConnection: 'rich-code-nav-prod'
-    languages: csharp
     githubServiceConnection: 'arjun27 (1)'
+    languages: csharp
