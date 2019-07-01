@@ -6,10 +6,11 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-- script: dotnet restore
+- task: NuGetToolInstaller@0
 
-- script: dotnet build --configuration $(buildConfiguration)
-  displayName: 'dotnet build $(buildConfiguration)'
+- task: NuGetCommand@2
+  inputs:
+    restoreSolution: '$(solution)'
 
 - task: RichCodeNavIndexer@0
   inputs:
