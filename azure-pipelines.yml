@@ -6,13 +6,13 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
+- script: dotnet restore
+
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
 
 - task: RichCodeNavIndexer@0
   inputs:
     serviceConnection: 'rich-code-nav-prod'
-    nugetServiceConnection: 'rich-code-nav-nuget'
     languages: csharp
     githubServiceConnection: 'arjun27 (1)'
-    serviceEndpoint: 'https://prod.richnav.vsengsaas.visualstudio.com'
