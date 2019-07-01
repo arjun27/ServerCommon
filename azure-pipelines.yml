@@ -1,4 +1,3 @@
-
 pool:
   name: 'Hosted VS2017'
 
@@ -15,5 +14,5 @@ steps:
 - task: RichCodeNavIndexer@0
   inputs:
     serviceConnection: 'rich-code-nav-prod'
+    githubServiceConnection: 'arjun27 (2)'
     languages: csharp
-    githubServiceConnection: 'arjun27 (1)'
